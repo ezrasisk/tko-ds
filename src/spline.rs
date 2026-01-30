@@ -1,6 +1,6 @@
 pub fn basis(knots: &[f64], degree: usize, i: usize, x: f64) -> f64 {
   if degree == 0 {
-    if knots[i] <= x && x  knots[i + 1] {
+    if knots[i] <= x && x < knots[i + 1] {
       1.0
     } else {
       0.0
